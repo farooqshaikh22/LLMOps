@@ -27,12 +27,33 @@
           }
         ],
         "secrets": [
-          {
-            "name": "multidocchatsecret",
-            "valueFrom": "arn:aws:secretsmanager:us-east-1:536607082396:secret:multidocchatsecret-q0Rsjk"
-          }
-  
+        {
+            "name": "GROQ_API_KEY",
+            "valueFrom": "arn:aws:secretsmanager:us-east-1:536607082396:secret:multidocchatsecret-q0Rsjk:GROQ_API_KEY::"
+        },
+        {
+            "name": "GOOGLE_API_KEY",
+            "valueFrom": "arn:aws:secretsmanager:us-east-1:536607082396:secret:multidocchatsecret-q0Rsjk:GOOGLE_API_KEY::"
+        },
+        {
+            "name": "LANGCHAIN_API_KEY",
+            "valueFrom": "arn:aws:secretsmanager:us-east-1:536607082396:secret:multidocchatsecret-q0Rsjk:LANGCHAIN_API_KEY::"
+        },
+        {
+            "name": "LANGCHAIN_TRACING_V2",
+            "valueFrom": "arn:aws:secretsmanager:us-east-1:536607082396:secret:multidocchatsecret-q0Rsjk:LANGCHAIN_TRACING_V2::"
+        },
+        {
+            "name": "LANGCHAIN_ENDPOINT",
+            "valueFrom": "arn:aws:secretsmanager:us-east-1:536607082396:secret:multidocchatsecret-q0Rsjk:LANGCHAIN_ENDPOINT::"
+        },
+        {
+            "name": "LANGCHAIN_PROJECT",
+            "valueFrom": "arn:aws:secretsmanager:us-east-1:536607082396:secret:multidocchatsecret-q0Rsjk:LANGCHAIN_PROJECT::"
+        }
         ],
+
+        
         "logConfiguration": {
           "logDriver": "awslogs",
           "options": {
