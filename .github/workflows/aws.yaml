@@ -1,12 +1,18 @@
 name: CI/CD to ECS Fargate
+
 on:
+  push:
+    branches:
+      - master
+      - DeployOnAWS
   workflow_run:
-    workflows: ["CI"] # Must match the "name" field in ci.yml
+    workflows: ["CI"]
     branches:
       - master
       - DeployOnAWS
     types:
       - completed
+
   workflow_call:
 env:
   AWS_REGION: us-east-1
