@@ -1,7 +1,7 @@
 {
     "family": "multiple-doc-chat",
     "networkMode": "awsvpc",
-    "executionRoleArn": "arn:aws:iam::536607082396:user/multi-doc-chat-user",
+    "executionRoleArn": "arn:aws:iam::536607082396:role/ecsTaskExecutionRole",
     "requiresCompatibilities": ["FARGATE"],
     "cpu": "1024",
     "memory": "8192",
